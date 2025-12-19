@@ -1,3 +1,53 @@
+LOCAL AI MOVIE RECOMMENDER (LLAMA.CPP)
+============================================================
+
+OVERVIEW
+------------------------------------------------------------
+This part of the project explores running a local AI model
+on a desktop computer to generate movie recommendations.
+The model runs fully offline using CPU-only execution.
+
+The purpose was to investigate prompt-based interaction
+with a local language model, without cloud services or APIs.
+
+
+TECHNOLOGY
+------------------------------------------------------------
+- Python
+- llama.cpp (llama_cpp bindings)
+- Quantized GGUF model format
+
+The model is loaded from a local file and optimized to run
+efficiently on standard hardware.
+
+
+SCRIPTS
+------------------------------------------------------------
+recommend.py:
+- Single-run script for testing recommendations
+- Sends one prompt and prints the result
+
+app.py:
+- Interactive terminal-based chat
+- Allows continuous user input
+- Exits on "exit" or "quit"
+
+
+KEY SETTINGS
+------------------------------------------------------------
+- Context size: 2048 tokens
+- CPU threads: 4
+- Temperature: 0.7
+- Stop sequences to control output
+
+
+PURPOSE
+------------------------------------------------------------
+This component serves as a small investigation into offline
+LLM usage and complements the Android AI work.
+
+------------------------------------------------------------
+
 
 ON-DEVICE AI MODELS FOR ANDROID (TensorFlow Lite)
 ==========================================
