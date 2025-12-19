@@ -19,3 +19,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# ML / Whisper models
+*.bin
